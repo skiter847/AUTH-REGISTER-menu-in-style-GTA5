@@ -1,5 +1,5 @@
-$(window).on("hashchange", function(){
-    if(location.hash.slice(1)=="register"){
+$(window).on("hashchange", function () {
+    if (location.hash.slice(1) == "register") {
         $(".card").addClass("extend");
         $("#login").removeClass("selected");
         $("#register").addClass("selected");

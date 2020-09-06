@@ -1,210 +1,208 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	font-family: "Roboto";
-	outline: none;
-	border: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Roboto";
+    outline: none;
+    border: none;
 }
 
 html, body {
-	overflow-y:hidden;
+    overflow-y: hidden;
 
 }
-body{
-	background: url("../img/bg-image.png") no-repeat fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+
+body {
+    background: url("../img/bg-image.png") no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .align {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 80px;
 }
 
 .logo {
-	width: 300px;
-	margin-left: 12%;
+    width: 300px;
+    margin-left: 12%;
 }
 
 .card {
-	margin-top: 28px;
-	width: 396px;
-	border: 1px solid #373737;
-	border-radius: 10px;
-	overflow: hidden;
-	transition: max-height 0.2s;
+    margin-top: 28px;
+    width: 396px;
+    border: 1px solid #373737;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: max-height 0.2s;
 }
-
 
 
 .head {
-	width: 100%;
-	display: flex;
-	height: 72px;
-	border-bottom: 1px solid #373737;
-	justify-content: space-between;
+    width: 100%;
+    display: flex;
+    height: 72px;
+    border-bottom: 1px solid #373737;
+    justify-content: space-between;
 }
 
 .head a {
-	padding: 0 28px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: white;
-	font-size: 20px;
-	font-weight: 500;
-	opacity: 0.9;
+    padding: 0 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.9;
 }
 
 .head .selected {
-	position: relative;
-	color: #00FF5C;
-	font-weight: 700;
+    position: relative;
+    color: #00FF5C;
+    font-weight: 700;
 }
 
 .head .selected:after {
-	position: absolute;
-	content: "";
-	bottom: 0;
-	left: 0;
-	height: 5px;
-	width: 100%;
-	background: #00FF5C;
-	border-radius: 99px 99px 0 0;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: #00FF5C;
+    border-radius: 99px 99px 0 0;
 }
 
 .tabs {
-	height: calc(100% - 72px);
-	display: flex;
+    height: calc(100% - 72px);
+    display: flex;
 }
-
 
 
 form {
-	width: 100%;
-	flex-shrink: 0;
-	padding: 44px 38px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	position: relative;
-	right: 0;
-	transition: right 0.5s;
-	height: 350px;
+    width: 100%;
+    flex-shrink: 0;
+    padding: 44px 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 0;
+    transition: right 0.5s;
+    height: 350px;
 }
 
 .extend form {
-	right: 100%;
-	height: auto;
+    right: 100%;
+    height: auto;
 }
 
 .inputs {
-	width: 100%;
+    width: 100%;
 }
 
 .input {
-	position: relative;
-	margin-bottom: 20px;
-	width: 100%;
-	display: flex;
-	align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .input input {
-	width: 100%;
-	font-size: 17px;
-	border-radius: 8px;
-	padding: 16px 18px 16px 51px;
+    width: 100%;
+    font-size: 17px;
+    border-radius: 8px;
+    padding: 16px 18px 16px 51px;
 }
 
 .input img {
-	width: 16px;
-	position: absolute;
-	left: 19px;
+    width: 16px;
+    position: absolute;
+    left: 19px;
 }
 
 .checkbox {
-	height: 40px;
-	display: flex;
-	align-items: center;
-	position: relative;
-	cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
 }
 
 .checkbox input {
-	position: absolute;
-	opacity: 0;
-	height: 0;
-	width: 0;
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
 }
-
 
 
 .card button {
-	display: block;
-	background: #0ee25b;
-	padding: 14px 52px;
-	border-radius: 12px;
-	font-weight: 700;
-	font-size: 21px;
-	cursor: pointer;
+    display: block;
+    background: #0ee25b;
+    padding: 14px 52px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 21px;
+    cursor: pointer;
 }
 
 
-.head, .tabs{
-	background: rgba(0, 0, 0, 0.3);
+.head, .tabs {
+    background: rgba(0, 0, 0, 0.3);
 }
 
-input{
-	background-color: rgba(0, 0, 0, 0.4);
-	color: white;
+input {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
 }
 
 .npc {
-	top: 32%;
-	left: 59%;
-	position: fixed;
+    top: 32%;
+    left: 59%;
+    position: fixed;
 }
 
 
-.container{
-	margin-top: 14%;
+.container {
+    margin-top: 14%;
 }
 
-#npc-message{
+#npc-message {
 
-	background-color: #fff;
-	width: 250px;
-	position: fixed;
-	top: 30%;
-	left: 80%;
+    background-color: #fff;
+    width: 250px;
+    position: fixed;
+    top: 30%;
+    left: 80%;
 }
 
-.auth a{
-	height: 70px;
+.auth a {
+    height: 70px;
 }
 
-.recovery a{
-	color: #A19B9B;
+.recovery a {
+    color: #A19B9B;
 }
 
-.recovery a:hover{
-	color: white;
+.recovery a:hover {
+    color: white;
 }
 
 
-#money_png img{
-	width: 22px;
-	position: absolute;
-	left: 19px;
+#money_png img {
+    width: 22px;
+    position: absolute;
+    left: 19px;
 }
 
 
