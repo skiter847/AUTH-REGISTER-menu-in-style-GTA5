@@ -1,5 +1,5 @@
 # Установка 
-`git clone https://github.com/skiter847/AUTH-REGISTER-menu-in-style-GTA5.git`
+`git clone https://github.com/skiter847/LOGIN-REGISTER-menu-in-style-GTA5.git`
 
 ## Скриншоты 
 
